@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -z "$1" ]; then
+  echo "Oops! You forgot to provide a file name."
+  echo "Usage: cpp-compile <file>"
+  echo "Example: cpp-compile main"
+  exit 1
+fi
+g++ "$1.cpp" -o "$1" && ./"$1" && rm "$1"

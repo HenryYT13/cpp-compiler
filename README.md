@@ -1,0 +1,33 @@
+# cpp-compile
+
+A simple bash utility to compile and run a single C++ file, then clean up the binary — all in one command.
+
+## Usage
+
+```bash
+cpp-compile <file>
+```
+
+Compiles `<file>.cpp`, runs the resulting binary, and automatically removes it after execution.
+
+### Example
+
+```bash
+cpp-compile main
+```
+
+This runs:
+```bash
+g++ main.cpp -o main && ./main && rm main
+```
+
+## Install
+
+```bash
+chmod +x cpp-compile
+sudo cp cpp-compile /bin/
+```
+
+## License
+
+MIT
