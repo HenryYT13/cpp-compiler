@@ -24,10 +24,7 @@ g++ main.cpp -o main && ./main && rm main
 ## Install
 
 ```bash
+git clone https://github.com/HenryYT13/cpp-compiler.git
 chmod +x cpp-compile
 sudo cp cpp-compile /bin/
 ```
-
-## License
-
-MIT
