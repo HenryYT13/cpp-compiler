@@ -26,5 +26,6 @@ g++ main.cpp -o main && ./main && rm main
 ```bash
 git clone https://github.com/HenryYT13/cpp-compiler.git
 chmod +x cpp-compile
-sudo cp cpp-compile /bin/
+sudo mv cpp-compile /bin/
+cd .. & rm cpp-compile
 ```
